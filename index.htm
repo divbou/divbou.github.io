@@ -10,7 +10,14 @@
     </style>
   </head>
   <body>
-    <script>document.write(new Date())
+    
+    <script>
+    function freshtime() {
+	    document.getElementById("time").innerHTML = Date().toLocaleString();
+    }
+    setInterval(freshtime, 1000);
     </script>
+    
+    <p id="time"></p>
   </body>
 </html>
