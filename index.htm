@@ -5,7 +5,7 @@
     body {
       background-color: #d7d1b9ff;
       font-family: bangla sangam MN;
-      font-size: 72px;
+      font-size: 48px;
     }
     </style>
   </head>
@@ -13,7 +13,8 @@
     
     <script>
     function freshtime() {
-	    document.getElementById("time").innerHTML = Date().toLocaleString();
+	    const d = new Date();
+	    document.getElementById("time").innerHTML = d.toLocaleString();
     }
     setInterval(freshtime, 1000);
     </script>
